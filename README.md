@@ -1,0 +1,6 @@
+# .dotfiles
+
+
+```
+brew install stow
+```
