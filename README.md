@@ -1,6 +1,6 @@
 # .dotfiles
 
-Instal [GNU Stow](https://www.gnu.org/software/stow/)
+Install [GNU Stow](https://www.gnu.org/software/stow/)
 
 ```console
 brew install stow
