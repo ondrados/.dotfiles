@@ -1,3 +1,10 @@
-local nnoremap = require("ondrados.keymap").nnoremap
+local keymap = require("ondrados.keymap");
 
-nnoremap("<leader>pv", "<cmd>Ex<CR>")
+local nnoremap = keymap.nnoremap;
+
+nnoremap("<leader>pv", "<cmd>Ex<CR>");
+nnoremap("<C-d>", "<C-d>zz");
+nnoremap("<C-u>", "<C-u>zz");
+nnoremap("n", "nzzzv");
+nnoremap("N", "Nzzzv");
+
