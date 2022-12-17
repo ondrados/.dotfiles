@@ -1,12 +1,20 @@
-local keymap = require("ondrados.keymap");
-local nnoremap = keymap.nnoremap;
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
---nnoremap("<leader>pv", "<cmd>Ex<CR>");
-nnoremap("<C-d>", "<C-d>zz");
-nnoremap("<C-u>", "<C-u>zz");
-nnoremap("n", "nzzzv");
-nnoremap("N", "Nzzzv");
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+vim.keymap.set("n", "<leader>vwm", function()
+    require("vim-with-me").StartVimWithMe()
+end)
+vim.keymap.set("n", "<leader>svwm", function()
+    require("vim-with-me").StopVimWithMe()
+end)
 
