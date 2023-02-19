@@ -12,7 +12,7 @@ export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 export PATH="$HOME/.local/scripts:$PATH"
 
 setopt globdots
-bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^f "~/.local/scripts/tmux-sessionizer\n"
 
 alias vim=nvim
 alias ll="ls -la"
