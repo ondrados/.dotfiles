@@ -15,5 +15,6 @@ setopt globdots
 bindkey -s ^f "~/.local/scripts/tmux-sessionizer\n"
 
 alias vim=nvim
+alias cat=bat
 alias ll="ls -la"
 
