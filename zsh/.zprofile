@@ -6,7 +6,7 @@ export PATH="$PATH:/Users/ondrados/Library/Application Support/JetBrains/Toolbox
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Default Python
-export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:/Users/ondrados/Library/Python/3.10/bin:$PATH"
+export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 export PATH="$HOME/.local/scripts:$PATH"
