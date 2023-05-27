@@ -14,7 +14,8 @@ export PATH="$HOME/.local/scripts:$PATH"
 setopt globdots
 bindkey -s ^f "~/.local/scripts/tmux-sessionizer\n"
 
+alias sudo="sudo "
 alias vim=nvim
 alias cat=bat
-alias ll="ls -la"
+alias ll="ls -lha"
 
